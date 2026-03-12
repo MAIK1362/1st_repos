@@ -19,3 +19,11 @@ class MainWin(QWidget):
         self.set_appear()
         #inicio
         self.show()
+    def initUI(self):
+        sefl.btn_next = QPushButton(txt next, self)
+        self.hello_text = QLabel(txt hello)
+        self.instruction = QLabel(txt instruction)
+
+        self.layout_line = QVBoxLayout()
+        self.layout_line.addwidget(self.hello_text, alignment = QT.AlignLeft)
+        self.layout_line.addwidget(self.instruction, alignment = QT.AlignLeft)
