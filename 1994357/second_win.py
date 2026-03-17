@@ -19,5 +19,14 @@ class MainWin(QWidget):
         #inicio
         self.show()
 
+    def nex_click(self):
+        self.tw = TestWin()
+        self.hide()
 
-    
+    def connects(self):
+        self.btn_next.clicked.connect(self.next_click)
+
+    def ser_appear(self):
+        self.setWindowTitle(txt_title)
+        self.resize(win_width, win_height)
+        self.move(win_x, win_y)
