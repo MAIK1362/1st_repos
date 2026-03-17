@@ -27,3 +27,21 @@ class MainWin(QWidget):
         self.layout_line = QVBoxLayout()
         self.layout_line.addwidget(self.hello_text, alignment = QT.AlignLeft)
         self.layout_line.addwidget(self.instruction, alignment = QT.AlignLeft)
+        self.layout_line.addwidget(self.btn_next,alignment = QT.Aligncenter)
+        self.setLayout(self.Layout_line)
+
+    def nex_click(self):
+        self.tw = TestWin()
+        self.hide()
+
+    def connects(self):
+        self.btn_next.clicked.connect(self.next_click)
+
+    def ser_appear(self):
+        self.setWindowTitle(txt_title)
+        self.resize(win_width, win_height)
+        self.move(win_x, win_y)
+
+app = QAplication([])
+mw = MainWin()
+app.exec_()
