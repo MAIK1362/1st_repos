@@ -1,6 +1,8 @@
 # write the code for main app and first screen
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QApplication, QWidget,QHBoxLayout, QVBoxLayout,QGroupBox, QRadioButton,QPushButton, QLabel, QListWidget, QLineEdit)
+from PyQt5.QtCore import Qt, QTimer, QTime, QLocale
+from PyQt5.QtGui import QDoubleValidator, QIntValidator, QFont # comprobar los tipos de los valores de entrada
+from PyQt5.QtWidgets import (QApplication, QWidget,QHBoxLayout, QVBoxLayout, QGridLayout,QGroupBox, QRadioButton,QPushButton, QLabel, QListWidget, QLineEdit)
+
 
 
 from instr import *
