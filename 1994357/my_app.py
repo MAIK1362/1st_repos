@@ -21,6 +21,7 @@ class MainWin(QWidget):
         self.set_appear()
         #inicio
         self.show()
+        
     def initUI(self):
         sefl.btn_next = QPushButton(txt next, self)
         self.hello_text = QLabel(txt hello)
@@ -42,8 +43,11 @@ class MainWin(QWidget):
     def ser_appear(self):
         self.setWindowTitle(txt_title)
         self.resize(win_width, win_height)
-        self.move(win_x, win_y)
-
-app = QAplication([])
-mw = MainWin()
-app.exec_()
+        self.move(win_x, win_y) 
+        
+def Main():
+    app = QAplication([])
+    mw = MainWin()
+    app.exec_()
+    
+main()
